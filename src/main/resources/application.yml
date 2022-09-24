@@ -1,0 +1,25 @@
+spring:
+  application:
+    name: mtp-agent-refactor
+
+module:
+  android:
+    enable: true
+  ios:
+    enable: true
+
+netty:
+  host: 172.18.120.51
+  port: 8082
+
+rocketmq:
+  consumer:
+    isOnOff: true
+    groupName: mtp-agent-refactor
+    nameSrvAddr: dytest.dz11.com:9876
+    topic: AutoTest~*
+    consumerThreadMin: 5
+    consumerThreadMax: 32
+    consumerMessageBatchMaxSize: 1
+
+
